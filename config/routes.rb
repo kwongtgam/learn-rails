@@ -53,4 +53,9 @@ LearnRails::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  LearnRails::Application.routes.draw do
+    #root to: redirect('/about.html')
+    root to: 'visitors#new'
+  end
 end
